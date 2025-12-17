@@ -1,0 +1,146 @@
+{
+	"id": "dd9e523c-cb1c-486e-afbf-fe1dcf1cda65",
+	"name": "API Testing",
+	"timestamp": "2025-12-17T17:29:38.038Z",
+	"collection_id": "50311428-8a54f3c5-5754-4619-8d73-532ca7318338",
+	"folder_id": 0,
+	"environment_id": "50311428-70db1e60-13ad-4596-a5e2-55a96df8b5a0",
+	"totalPass": 4,
+	"delay": "1000",
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-12-17T17:29:30.221Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "685bf1dd-bed8-47cb-a53c-b28183cc165e",
+			"name": "Create Repo",
+			"url": "https://api.github.com/user/repos",
+			"time": 1124,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1124
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "40e13044-cb12-4db7-96d4-d732d56bb741",
+			"name": "Read Repo",
+			"url": "https://api.github.com/repos/kevin-azb/api",
+			"time": 507,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				507
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "2d9b8b9d-ff23-4c2a-acc3-89da672bf015",
+			"name": "Update Repo",
+			"url": "https://api.github.com/repos/kevin-azb/api",
+			"time": 766,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				766
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "bc62569f-4612-4188-8e40-f821bba52559",
+			"name": "Delete Repo",
+			"url": "https://api.github.com/repos/kevin-azb/api-testing",
+			"time": 651,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is 204": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				651
+			],
+			"allTests": [
+				{
+					"Status code is 204": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 3048,
+	"collection": {
+		"requests": [
+			{
+				"id": "685bf1dd-bed8-47cb-a53c-b28183cc165e",
+				"method": "POST"
+			},
+			{
+				"id": "40e13044-cb12-4db7-96d4-d732d56bb741",
+				"method": "GET"
+			},
+			{
+				"id": "2d9b8b9d-ff23-4c2a-acc3-89da672bf015",
+				"method": "PATCH"
+			},
+			{
+				"id": "bc62569f-4612-4188-8e40-f821bba52559",
+				"method": "DELETE"
+			}
+		]
+	}
+}
